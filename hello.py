@@ -1,3 +1,6 @@
 #!python
 # This is my first python program, it says hello world!
-print "Hello World!"
+
+for number in xrange(0,10):
+    print "My number is "
+    print number
