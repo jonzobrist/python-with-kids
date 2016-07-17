@@ -8,11 +8,11 @@
 # neither? Just say the number, punk!
 
 for number in xrange(1,16):
-    if (number % 3 == 0) & (number % 5 == 0):
-        print "FizzBuzz"
-    elif number % 3 == 0:
-        print "Fizz"
-    elif number % 5 == 0:
-        print "Buzz"
-    else:
-        print number
+    result = ""
+    if number % 3 == 0:
+        result += "Fizz"
+    if number % 5 == 0:
+        result += "Buzz"
+    if len(result) == 0:
+        result = number
+    print result
